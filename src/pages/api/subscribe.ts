@@ -28,7 +28,7 @@ const subscribe = async (req: NextApiRequest, res: NextApiResponse ) => {
       )
     );
 
-    let customerId = user.data.stripe_customer_id;
+    let customerId = user.data?.stripe_customer_id;
 
     if (!customerId) {
 
